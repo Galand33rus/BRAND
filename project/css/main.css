@@ -146,7 +146,7 @@ body {
 .search__btn {
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: -36px;
 	padding: 0 11px;
 	font-size: 14px;
 	line-height: 2.29;
