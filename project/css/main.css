@@ -754,6 +754,10 @@ body {
 	opacity: 1;
 }
 
+.items__card:hover {
+	box-shadow: 0 5px 8px rgba(0, 0, 0, .2)
+}
+
 .items__link:hover {
 	box-shadow: 0 0 10px 2px rgba(221, 221, 221, 1);
 }

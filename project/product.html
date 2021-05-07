@@ -5,13 +5,14 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Single Page</title>
+	<title>Product</title>
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/single.css">
+	<link rel="stylesheet" href="css/product.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://use.fontawesome.com/498429ed19.js"></script>
 </head>
 
 <body>
@@ -409,134 +410,357 @@
 
 	<section class="product">
 		<div class="container product__wrapper">
-			<!-- <div class="product__img">
-				<img src="img/product.jpg" alt="#">
-			</div> -->
-		</div>
-	</section>
 
-	<section class="description">
-		<div class="container description__wrapper">
-			<div class="description__title">
-				<h3>WOMEN COLLECTION</h3>
-				<div class="description__line">
-					<div class="description__grey"></div>
-					<div class="description__red"></div>
-					<div class="description__grey"></div>
-				</div>
-				<p>Moschino Cheap And Chic</p>
-			</div>
-			<div class="description__info">
-				Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate
-				collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather
-				than exceptional portals.
-			</div>
-			<div class="description__material">
-				<p>MATERIAL: <span>COTTON</span></p>
-				<p>DESIGNER: <span>BINBURHAN</span></p>
-			</div>
-			<div class="description__price">
-				$561
-			</div>
-			<form action="#" class="description__form">
-				<div class="description__box">
-					<div class="description__color">
-						CHOOSE COLOR <br>
-						<select name="color" size="1">
+			<div class="product__accordion">
 
-							<option value="red">red</option>
-							<option value="yellow">yellow</option>
-							<option value="blue">blue</option>
-							<option value="black">black</option>
-							<option style="background-color:#cccccc" value="cccccc">111</option>
-							<option style="background-color:#ffff00" value="ffff00">222</option>
-							<option style="background-color:#ff0000" value="ff0000">333</option>
-							<option style="background-color:#8099E8" value="8099E8">444</option>
-						</select>
-
+				<div class="accordion__item active" data-collapse="#data_1">
+					<div class="accordion__header">
+						<div class="accordion__title">Category</div>
 					</div>
-
-					<div class="description__size">
-						CHOOSE SIZE <br>
-						<select name="size">
-							<option value="xs">xs</option>
-							<option value="s">s</option>
-							<option value="m">m</option>
-							<option value="l">l</option>
-							<option value="xl">xl</option>
-							<option value="xxl" selected>xxl</option>
-						</select>
-					</div>
-
-					<div class="description__quantity">
-						QUANTITY <br>
-						<input type="text">
+					<div class="accordion__content" id="data_1">
+						<a href="#" class="product__accordion-link">Accessories</a>
+						<a href="#" class="product__accordion-link">Bags</a>
+						<a href="#" class="product__accordion-link">Denim</a>
+						<a href="#" class="product__accordion-link">Hoodies & Sweatshirts</a>
+						<a href="#" class="product__accordion-link">Jackets & Coats</a>
+						<a href="#" class="product__accordion-link">Pants</a>
+						<a href="#" class="product__accordion-link">Polos</a>
+						<a href="#" class="product__accordion-link">Shirts</a>
+						<a href="#" class="product__accordion-link">Shoes</a>
+						<a href="#" class="product__accordion-link">Shorts</a>
+						<a href="#" class="product__accordion-link">Sweaters & Knits</a>
+						<a href="#" class="product__accordion-link">T-Shirts</a>
+						<a href="#" class="product__accordion-link">Tanks</a>
 					</div>
 				</div>
-				<div class="description__button">
-					<button type="submit" class="description__btn">Add to Cart</button>
+
+				<div class="accordion__item " data-collapse="#data_2">
+					<div class="accordion__header">
+						<div class="accordion__title">BRAND</div>
+					</div>
+					<div class="accordion__content" id="data_2">
+						<a href="#" class="product__accordion-link">Accessories</a>
+						<a href="#" class="product__accordion-link">Bags</a>
+						<a href="#" class="product__accordion-link">Denim</a>
+						<a href="#" class="product__accordion-link">Hoodies & Sweatshirts</a>
+						<a href="#" class="product__accordion-link">Jackets & Coats</a>
+						<a href="#" class="product__accordion-link">Pants</a>
+						<a href="#" class="product__accordion-link">Polos</a>
+						<a href="#" class="product__accordion-link">Shirts</a>
+						<a href="#" class="product__accordion-link">Shoes</a>
+						<a href="#" class="product__accordion-link">Shorts</a>
+						<a href="#" class="product__accordion-link">Sweaters & Knits</a>
+						<a href="#" class="product__accordion-link">T-Shirts</a>
+						<a href="#" class="product__accordion-link">Tanks</a>
+					</div>
 				</div>
 
+				<div class="accordion__item" data-collapse="#data_3">
+					<div class="accordion__header">
+						<div class="accordion__title">dESIGNER</div>
+					</div>
+					<div class="accordion__content" id="data_3">
+						<a href="#" class="product__accordion-link">Accessories</a>
+						<a href="#" class="product__accordion-link">Bags</a>
+						<a href="#" class="product__accordion-link">Denim</a>
+						<a href="#" class="product__accordion-link">Hoodies & Sweatshirts</a>
+						<a href="#" class="product__accordion-link">Jackets & Coats</a>
+						<a href="#" class="product__accordion-link">Pants</a>
+						<a href="#" class="product__accordion-link">Polos</a>
+						<a href="#" class="product__accordion-link">Shirts</a>
+						<a href="#" class="product__accordion-link">Shoes</a>
+						<a href="#" class="product__accordion-link">Shorts</a>
+						<a href="#" class="product__accordion-link">Sweaters & Knits</a>
+						<a href="#" class="product__accordion-link">T-Shirts</a>
+						<a href="#" class="product__accordion-link">Tanks</a>
+					</div>
+				</div>
+			</div><!-- /.accordion -->
 
-			</form>
+			<div class="product__box">
+				<div class="product__info">
+					<form action="#" class="product__form" oninput="result.value=(range.value)">
+						<div class="product__trend-wrapper">
+
+							<div class="product__trend">
+								<p class="product__title">Trending now</p>
+								<div class="product__trend-box">
+									<input class="product__radio" type="radio" name="trend" id="Bohemian" value="Bohemian">
+									<label class="product__radio-label" for="Bohemian">Bohemian</label>
+									<input class="product__radio" type="radio" name="trend" id="Floral" value="Floral">
+									<label class="product__radio-label" for="Floral">Floral</label>
+									<input class="product__radio" type="radio" name="trend" id="Lace" value="Lace">
+									<label class="product__radio-label" for="Lace">Lace</label>
+								</div>
+								<div class="product__trend-box">
+									<input class="product__radio" type="radio" name="trend" id="Floral2" value="Floral">
+									<label class="product__radio-label" for="Floral2">Floral</label>
+									<input class="product__radio" type="radio" name="trend" id="Lace2" value="Lace">
+									<label class="product__radio-label" for="Lace2">Lace</label>
+									<input class="product__radio" type="radio" name="trend" id="Bohemian2" value="Bohemian">
+									<label class="product__radio-label" for="Bohemian2">Bohemian</label>
+								</div>
+							</div>
 
 
+							<div class="product__size">
+								<p class="product__title">SIZE</p>
+								<div class="product__size-box">
+									<input class="product__check" type="checkbox" name="size" id="xxs" vabel="xxs">
+									<label class="product__check-label" for="xxs">xxs</label>
+									<input class="product__check" type="checkbox" name="size" id="xs" vabel="xs">
+									<label class="product__check-label" for="xs">xs</label>
+									<input class="product__check" type="checkbox" name="size" id="s" vabel="s">
+									<label class="product__check-label" for="s">s</label>
+									<input class="product__check" type="checkbox" name="size" id="m" vabel="m">
+									<label class="product__check-label" for="m">m</label>
+								</div>
+								<div class="product__size-box">
+									<input class="product__check" type="checkbox" name="size" id="l" vabel="l">
+									<label class="product__check-label" for="l">l</label>
+									<input class="product__check" type="checkbox" name="size" id="xl" vabel="xl">
+									<label class="product__check-label" for="xl">xl</label>
+									<input class="product__check" type="checkbox" name="size" id="xxl" vabel="xxl">
+									<label class="product__check-label" for="xxl">xxl</label>
+								</div>
+							</div>
 
+							<div class="product__prise">
+								<p class="product__title">price</p>
+								<input id="range" type="range" value="100" step="1" class="product__range" min="0" max="1000">
+								<p>$:
+									<output name="result" for="range">100</output>
+								</p>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="choice">
 
-		</div>
-	</section>
+					<p class="choice__title">Sort By</p>
+					<select class="choice__select" name="sort">
+						<option value="">Name</option>
+						<option value="">Price</option>
+					</select>
+					<p class="choice__title">Show</p>
+					<select class="choice__select" name="show">
+						<option value="">9</option>
+						<option value="">12</option>
+						<option value="">15</option>
+					</select>
+				</div>
 
-	<section class="also">
+				<div class="items__wrapper">
+					<div class="items__card">
+						<a href="single.html" class="items__info-link" target="_blank">
+							<img src="img/item13.jpg" alt="item13" class="items__img">
+							<span class="items__name">Mango People T-shirt</span><br>
+							<span class="items__price">$52.00</span>
+						</a>
+						<div class="items__info">
+							<a href="javascript:void(0);" class="items__link"> <img src="img/basket_w.png" alt="basket"
+									class="items__infoimg"> Add to Cart</a>
+							<a href="javascript:void(0);" class="items__link items__link-rt"><i class="fa fa-retweet"
+									aria-hidden="true"></i></a>
+							<a href="javascript:void(0);" class="items__link items__link-favorites"><i class="fa fa-heart-o"
+									aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="items__card">
+						<a href="single.html" class="items__info-link" target="_blank">
+							<img src="img/item14.jpg" alt="item14" class="items__img">
+							<span class="items__name">Mango People T-shirt</span><br>
+							<span class="items__price">$52.00</span>
+						</a>
+						<div class="items__info">
+							<a href="javascript:void(0);" class="items__link"> <img src="img/basket_w.png" alt="basket"
+									class="items__infoimg"> Add to Cart</a>
+							<a href="javascript:void(0);" class="items__link items__link-rt"><i class="fa fa-retweet"
+									aria-hidden="true"></i></a>
+							<a href="javascript:void(0);" class="items__link items__link-favorites"><i class="fa fa-heart-o"
+									aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="items__card">
+						<a href="single.html" class="items__info-link" target="_blank">
+							<img src="img/item3.jpg" alt="item3" class="items__img">
+							<span class="items__name">Mango People T-shirt</span><br>
+							<span class="items__price">$52.00</span>
+						</a>
+						<div class="items__info">
+							<a href="javascript:void(0);" class="items__link"> <img src="img/basket_w.png" alt="basket"
+									class="items__infoimg"> Add to Cart</a>
+							<a href="javascript:void(0);" class="items__link items__link-rt"><i class="fa fa-retweet"
+									aria-hidden="true"></i></a>
+							<a href="javascript:void(0);" class="items__link items__link-favorites"><i class="fa fa-heart-o"
+									aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="items__card">
+						<a href="single.html" class="items__info-link" target="_blank">
+							<img src="img/item15.jpg" alt="item15">
+							<span class="items__name">Mango People T-shirt</span><br>
+							<span class="items__price">$52.00</span>
+						</a>
+						<div class="items__info">
+							<a href="javascript:void(0);" class="items__link"> <img src="img/basket_w.png" alt="basket"
+									class="items__infoimg"> Add to Cart</a>
+							<a href="javascript:void(0);" class="items__link items__link-rt"><i class="fa fa-retweet"
+									aria-hidden="true"></i></a>
+							<a href="javascript:void(0);" class="items__link items__link-favorites"><i class="fa fa-heart-o"
+									aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="items__card">
+						<a href="single.html" class="items__info-link" target="_blank">
+							<img src="img/item8.jpg" alt="item8">
+							<span class="items__name">Mango People T-shirt</span><br>
+							<span class="items__price">$52.00</span>
+						</a>
+						<div class="items__info">
+							<a href="javascript:void(0);" class="items__link"> <img src="img/basket_w.png" alt="basket"
+									class="items__infoimg"> Add to Cart</a>
+							<a href="javascript:void(0);" class="items__link items__link-rt"><i class="fa fa-retweet"
+									aria-hidden="true"></i></a>
+							<a href="javascript:void(0);" class="items__link items__link-favorites"><i class="fa fa-heart-o"
+									aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="items__card">
+						<a href="single.html" class="items__info-link" target="_blank">
+							<img src="img/item16.jpg" alt="item16">
+							<span class="items__name">Mango People T-shirt</span><br>
+							<span class="items__price">$52.00</span>
+						</a>
+						<div class="items__info">
+							<a href="javascript:void(0);" class="items__link"> <img src="img/basket_w.png" alt="basket"
+									class="items__infoimg"> Add to Cart</a>
+							<a href="javascript:void(0);" class="items__link items__link-rt"><i class="fa fa-retweet"
+									aria-hidden="true"></i></a>
+							<a href="javascript:void(0);" class="items__link items__link-favorites"><i class="fa fa-heart-o"
+									aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="items__card">
+						<a href="single.html" class="items__info-link" target="_blank">
+							<img src="img/item6.jpg" alt="item6">
+							<span class="items__name">Mango People T-shirt</span><br>
+							<span class="items__price">$52.00</span>
+						</a>
+						<div class="items__info">
+							<a href="javascript:void(0);" class="items__link"> <img src="img/basket_w.png" alt="basket"
+									class="items__infoimg"> Add to Cart</a>
+							<a href="javascript:void(0);" class="items__link items__link-rt"><i class="fa fa-retweet"
+									aria-hidden="true"></i></a>
+							<a href="javascript:void(0);" class="items__link items__link-favorites"><i class="fa fa-heart-o"
+									aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="items__card">
+						<a href="single.html" class="items__info-link" target="_blank">
+							<img src="img/item17.jpg" alt="item17">
+							<span class="items__name">Mango People T-shirt</span><br>
+							<span class="items__price">$52.00</span>
+						</a>
+						<div class="items__info">
+							<a href="javascript:void(0);" class="items__link"> <img src="img/basket_w.png" alt="basket"
+									class="items__infoimg"> Add to Cart</a>
+							<a href="javascript:void(0);" class="items__link items__link-rt"><i class="fa fa-retweet"
+									aria-hidden="true"></i></a>
+							<a href="javascript:void(0);" class="items__link items__link-favorites"><i class="fa fa-heart-o"
+									aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="items__card">
+						<a href="single.html" class="items__info-link" target="_blank">
+							<img src="img/item18.jpg" alt="item18">
+							<span class="items__name">Mango People T-shirt</span><br>
+							<span class="items__price">$52.00</span>
+						</a>
+						<div class="items__info">
+							<a href="javascript:void(0);" class="items__link"> <img src="img/basket_w.png" alt="basket"
+									class="items__infoimg"> Add to Cart</a>
+							<a href="javascript:void(0);" class="items__link items__link-rt"><i class="fa fa-retweet"
+									aria-hidden="true"></i></a>
+							<a href="javascript:void(0);" class="items__link items__link-favorites"><i class="fa fa-heart-o"
+									aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="items__btn">
+						<nav class="items__page">
+							<ul class="items__page-list">
+								<li class="page__item">
+									<span class="page-link"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+								</li>
+								<li class="page__item page__item-active">
+									<span class="page-link page__link-active">1</span>
+								</li>
+								<li class="page__item"><a class="page-link" href="#">2</a></li>
+								<li class="page__item"><a class="page-link" href="#">3</a></li>
+								<li class="page__item"><a class="page-link" href="#">4</a></li>
+								<li class="page__item"><a class="page-link" href="#">5</a></li>
+								<li class="page__item"><a class="page-link" href="#">6</a></li>
+								<li class="page__item"><span class="page-link">&hellip;</span></li>
+								<li class="page__item"><a class="page-link" href="#">20</a></li>
+								<li class="page__item "><a class="page-link page__link-active" href="#"><i class="fa fa-chevron-right"
+											aria-hidden="true"></i></a></li>
+							</ul>
+						</nav>
+						<a href="javascript:void(0);" class="items__view">View All</a>
+					</div>
+
+				</div>
+			</div>
+	</section> <!-- /.product -->
+
+	<div class="product__banner">
 		<div class="container">
-			<h3 class="also__title">you may like also</h3>
-			<div class="items__wrapper">
-				<div class="items__card">
-					<a href="#" class="items__info-link" target="_blank">
-						<img src="img/item9.jpg" alt="item1" class="items__img">
-						<span class="items__name">Mango People T-shirt</span><br>
-						<span class="items__price">$52.00</span>
-					</a>
-					<div class="items__info">
-						<a href="javascript:void(0);" class="items__link"> <img src="img/basket_w.png" alt="basket"
-								class="items__infoimg"> Add to Cart</a>
+			<div class="banner__info-product">
+				<div class="banner__info-box">
+					<a href="#" class="banner__info-link"></a>
+					<div class="banner__info-image">
+						<img src="img/delivery.png" alt="delivery">
+					</div>
+					<div class="banner__info-words">
+						<h4 class="banner__info-title banner__info-title-center">Free Delivery</h4>
+						<p class="banner__info-subtitle banner__info-subtitle-center">Worldwide delivery on all. Authorit tively
+							morph
+							next-generation innov
+							tion
+							with extensive models.</p>
 					</div>
 				</div>
-				<div class="items__card">
-					<a href="#" class="items__info-link" target="_blank">
-						<img src="img/item10.jpg" alt="item2" class="items__img">
-						<span class="items__name">Mango People T-shirt</span><br>
-						<span class="items__price">$52.00</span>
-					</a>
-					<div class="items__info">
-						<a href="javascript:void(0);" class="items__link"> <img src="img/basket_w.png" alt="basket"
-								class="items__infoimg"> Add to Cart</a>
+				<div class="banner__info-box">
+					<a href="#" class="banner__info-link"></a>
+					<div class="banner__info-image">
+						<img src="img/sales.png" alt="sales">
+					</div>
+					<div class="banner__info-words">
+						<h4 class="banner__info-title banner__info-title-center">Sales & discounts</h4>
+						<p class="banner__info-subtitle  banner__info-subtitle-center">Worldwide delivery on all. Authorit tively
+							morph
+							next-generation innov
+							tion
+							with extensive models.</p>
 					</div>
 				</div>
-				<div class="items__card">
-					<a href="#" class="items__info-link" target="_blank">
-						<img src="img/item11.jpg" alt="item3" class="items__img">
-						<span class="items__name">Mango People T-shirt</span><br>
-						<span class="items__price">$52.00</span>
-					</a>
-					<div class="items__info">
-						<a href="javascript:void(0);" class="items__link"> <img src="img/basket_w.png" alt="basket"
-								class="items__infoimg"> Add to Cart</a>
+				<div class="banner__info-box">
+					<a href="#" class="banner__info-link"></a>
+					<div class="banner__info-image">
+						<img src="img/quality.png" alt="quality">
 					</div>
-				</div>
-				<div class="items__card">
-					<a href="#" class="items__info-link" target="_blank">
-						<img src="img/item12.jpg" alt="item4">
-						<span class="items__name">Mango People T-shirt</span><br>
-						<span class="items__price">$52.00</span>
-					</a>
-					<div class="items__info">
-						<a href="javascript:void(0);" class="items__link"> <img src="img/basket_w.png" alt="basket"
-								class="items__infoimg"> Add to Cart</a>
+					<div class="banner__info-words">
+						<h4 class="banner__info-title banner__info-title-center">Quality assurance</h4>
+						<p class="banner__info-subtitle banner__info-subtitle-center">Worldwide delivery on all. Authorit tively
+							morph
+							next-generation innov
+							tion
+							with extensive models.</p>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 
 	<section class="subscribe">
 		<div class="container">
@@ -571,6 +795,7 @@
 			</div>
 		</div>
 	</section>
+	<!--/.subscribe -->
 
 	<footer class="footer">
 		<div class="container">
@@ -648,8 +873,22 @@
 		</div>
 	</footer>
 
-	<script src="https://use.fontawesome.com/498429ed19.js"></script>
 
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+		$("[data-collapse]").on("click", function (event) {
+			event.preventDefault();
+
+			var $this = $(this),
+				blockId = $this.data('collapse');
+
+			$this.toggleClass("active");
+		});
+
+	</script>
 </body>
 
 </html>
