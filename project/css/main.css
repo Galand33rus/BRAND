@@ -102,7 +102,7 @@ body {
 }
 
 .browse__title:hover {
-	background-color: #f16d7f;
+	background-color: #fff;
 	color: #000;
 }
 
@@ -212,11 +212,12 @@ body {
 	padding: 3px;
 	list-style: none;
 	cursor: pointer;
-	transition: background-color .2s;
+	transition: border-color .2s;
+	border: 1px solid #fff;
 }
 
 .basket__title:hover {
-	background-color: #f16d7f;
+	border-color: #f16d7f;
 }
 
 .basket__menu {
