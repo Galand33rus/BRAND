@@ -118,6 +118,7 @@
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 100px;
+		flex-wrap: wrap;
 	}
 	&__adress {
 		&-title {
@@ -214,6 +215,7 @@
 	}
 	&__total {
 		width: 360px;
+		height: 90%;
 		background-color: #f5f3f3;
 		padding: 40px 43px;
 		&-suptitle {
@@ -222,6 +224,9 @@
 			color: #4a4a4a;
 			text-transform: uppercase;
 			margin-bottom: 14px;
+			span {
+				margin-left: 20px;
+			}
 		}
 		&-title {
 			font-size: 16px;
@@ -229,9 +234,16 @@
 			text-align: right;
 			color: #222222;
 			text-transform: uppercase;
-			margin-bottom: 40px;
+			padding-bottom: 22px;
+			margin-bottom: 18px;
+			border-bottom: 1px solid #e2e2e2;
+			span {
+				margin-left: 20px;
+				color: $red;
+			}
 		}
 		&-btn {
+			display: block;
 			font-size: 16px;
 			font-weight: bold;
 			color: $white;
@@ -240,6 +252,7 @@
 			transition: color .2s;
 			padding: 19px 42px;
   		background-color: $red;
+			
 			&:hover {
 				color: #000;
 			}
