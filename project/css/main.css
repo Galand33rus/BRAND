@@ -102,7 +102,7 @@ body {
 }
 
 .browse__title:hover {
-	background-color: #f16d7f;
+	background-color: #fff;
 	color: #000;
 }
 
@@ -216,7 +216,7 @@ body {
 }
 
 .basket__title:hover {
-	background-color: #f16d7f;
+	border-color: #f16d7f;
 }
 
 .basket__menu {
