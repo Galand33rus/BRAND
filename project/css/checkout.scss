@@ -5,14 +5,11 @@
 	&__header {
 		margin-top: 33px;
 		cursor: pointer;
-		border-bottom: 1px solid #e8e8e8 ;
-		padding-bottom: 30px;
+		
 		&:last-child {
 			margin-bottom: 93px;
 		}
-		&.active .checkout__content {
-			display: flex;
-		}
+		
 		
 	}
 	&__title {
@@ -20,9 +17,20 @@
 		font-weight: bold;
 		color: #222222;
 		text-transform: uppercase;
+		border-bottom: 1px solid #e8e8e8;
+		padding-bottom: 30px;
 		transition: color .2s;
 		span {
 			margin-right: 10px;
+		}
+		&.active {
+			border-bottom: none;
+			padding-bottom: 0;
+		}
+		&.active ~ .checkout__content {
+			display: flex;
+			padding-bottom: 30px;
+			border-bottom: 1px solid #e8e8e8;
 		}
 		// &:hover {
 		// 	color: $red;

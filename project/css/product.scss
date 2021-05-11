@@ -71,19 +71,6 @@
 	&__item {
 		width: 245px;
 		margin-bottom: 10px;
-		&.active .accordion__content {
-				display: block;
-		}	
-		&.active .accordion__title {
-			color: $red;
-		}
-		&.active .accordion__header:after {
-			content: "\f0d7";
-			color: $red;
-		}
-		&:hover .accordion__header:after{
-			color: $red;
-		}
 	}
 	&__header {
 		padding: 15px 20px;
@@ -92,7 +79,7 @@
 		border-bottom: 1px solid transparent;
 		cursor: pointer;
 		border-bottom: 1px solid #ebebeb;
-		transition: color .2s;
+		transition: all .2s;
 		&:after {
 			content: "\f0d8";
 			display: block;
@@ -103,6 +90,19 @@
 			right: 20px;
 			z-index: 1;
 		}
+		&:hover:after{
+			color: $red;
+		}
+		&.active:after {
+			content: "\f0d7";
+			color: $red;
+		}
+		&.active ~ .accordion__content {
+			display: block;
+		}
+		&.active .accordion__title {
+			color: $red;
+		}	
 	}
 	&__title {
 		font-size: 14px;

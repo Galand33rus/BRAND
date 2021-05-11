@@ -1,18 +1,10 @@
 .checkout__header {
   margin-top: 33px;
   cursor: pointer;
-  border-bottom: 1px solid #e8e8e8;
-  padding-bottom: 30px;
 }
 
 .checkout__header:last-child {
   margin-bottom: 93px;
-}
-
-.checkout__header.active .checkout__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .checkout__title {
@@ -20,12 +12,27 @@
   font-weight: bold;
   color: #222222;
   text-transform: uppercase;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 30px;
   -webkit-transition: color .2s;
   transition: color .2s;
 }
 
 .checkout__title span {
   margin-right: 10px;
+}
+
+.checkout__title.active {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.checkout__title.active ~ .checkout__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 .checkout__content {

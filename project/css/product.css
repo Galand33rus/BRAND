@@ -93,23 +93,6 @@
   margin-bottom: 10px;
 }
 
-.accordion__item.active .accordion__content {
-  display: block;
-}
-
-.accordion__item.active .accordion__title {
-  color: #f16d7f;
-}
-
-.accordion__item.active .accordion__header:after {
-  content: "\f0d7";
-  color: #f16d7f;
-}
-
-.accordion__item:hover .accordion__header:after {
-  color: #f16d7f;
-}
-
 .accordion__header {
   padding: 15px 20px;
   position: relative;
@@ -117,8 +100,8 @@
   border-bottom: 1px solid transparent;
   cursor: pointer;
   border-bottom: 1px solid #ebebeb;
-  -webkit-transition: color .2s;
-  transition: color .2s;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .accordion__header:after {
@@ -130,6 +113,23 @@
   top: 25%;
   right: 20px;
   z-index: 1;
+}
+
+.accordion__header:hover:after {
+  color: #f16d7f;
+}
+
+.accordion__header.active:after {
+  content: "\f0d7";
+  color: #f16d7f;
+}
+
+.accordion__header.active ~ .accordion__content {
+  display: block;
+}
+
+.accordion__header.active .accordion__title {
+  color: #f16d7f;
 }
 
 .accordion__title {
