@@ -4,13 +4,10 @@
 .checkout {
 	&__header {
 		margin-top: 33px;
-		cursor: pointer;
 		
 		&:last-child {
 			margin-bottom: 93px;
 		}
-		
-		
 	}
 	&__title {
 		font-size: 16px;
@@ -20,6 +17,7 @@
 		border-bottom: 1px solid #e8e8e8;
 		padding-bottom: 30px;
 		transition: color .2s;
+		cursor: pointer;
 		span {
 			margin-right: 10px;
 		}
@@ -45,7 +43,7 @@
 				text-transform: uppercase;
 				font-size: 13px;
 				color: #222222;
-				margin-top: 33px;
+				margin-top: 24px;
 				margin-bottom: 15px;
 			}
 			&-text {
@@ -77,14 +75,21 @@
 
 .form {
 	&__guest {
+		&-wrapper {
+			display: flex;
+			margin-bottom: 19px;
+		}
+		&-input {
+			cursor: pointer;
+			align-self: center;
+		}
 		&-label {
-			content: '';
+			margin-left: 14px;
+			
 			font-size: 12px;
 			text-transform: uppercase;
 			color: #222222;
-			// &::before {
-				
-			// }
+			cursor: pointer;
 		}
 		&-btn {
 			margin-top: 38px;
@@ -95,10 +100,14 @@
 			color: #4a4a4a;
 			text-transform: uppercase;
 			background-color: $white;
-			transition: all .2s;
+			transition: color .2s;
+			transition: background-color .2s;
+			transition: transform 1.5s;
+			cursor: pointer;
 			&:hover {
+				transform: rotate(360deg);
 				background-color: $red;
-				color: #000;
+				color: $white;
 			}
 		}
 		&-link {
@@ -151,8 +160,9 @@
 			padding: 20px 55px;
 			margin-right: 32px;
 			transition: all .2s;
+			cursor: pointer;
 			&:hover {
-				color: #000;
+				color: $white;
 				background-color: $red;
 			}
 		}

@@ -110,7 +110,7 @@
 		color: #4a4a4a;
 		transition: all .2s;
 		&:hover {
-			color: #000;
+			color: $white;
 			cursor: pointer;
 			background-color: $red;
 		}
@@ -168,7 +168,7 @@
 				cursor: pointer;
 				&:hover {
 					background-color: $red;
-					color: #000;
+					color: $white;
 				}
 			}
 		}
@@ -209,7 +209,7 @@
 				cursor: pointer;
 				&:hover {
 					background-color: $red;
-					color: #000;
+					color: $white;
 				}
 			}
 		}
@@ -250,12 +250,15 @@
 			color: $white;
 			text-decoration: none;
 			text-transform: uppercase;
-			transition: color .2s;
-			padding: 19px 42px;
+			transition: all .2s;
+			padding: 19px 41px;
   		background-color: $red;
+			border: 1px solid transparent;
 			
 			&:hover {
-				color: #000;
+				color: $red;
+				background-color: $white;
+				border-color: $red;
 			}
 		}
 	}	

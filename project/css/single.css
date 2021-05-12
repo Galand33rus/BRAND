@@ -315,8 +315,13 @@
   cursor: pointer;
 }
 
+.description__btn i {
+  vertical-align: sub;
+  margin-right: 15px;
+}
+
 .description__btn:hover {
-  color: #000;
+  color: #fff;
   background-color: #f16d7f;
 }
 

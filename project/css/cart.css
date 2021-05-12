@@ -147,7 +147,7 @@
 }
 
 .cart__button:hover {
-  color: #000;
+  color: #fff;
   cursor: pointer;
   background-color: #f16d7f;
 }
@@ -236,7 +236,7 @@
 
 .cart__adress-form-btn:hover {
   background-color: #f16d7f;
-  color: #000;
+  color: #fff;
 }
 
 .cart__discount-subtitle {
@@ -299,7 +299,7 @@
 
 .cart__discount-form-btn:hover {
   background-color: #f16d7f;
-  color: #000;
+  color: #fff;
 }
 
 .cart__total {
@@ -344,12 +344,15 @@
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-transition: color .2s;
-  transition: color .2s;
-  padding: 19px 42px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  padding: 19px 41px;
   background-color: #f16d7f;
+  border: 1px solid transparent;
 }
 
 .cart__total-btn:hover {
-  color: #000;
+  color: #f16d7f;
+  background-color: #fff;
+  border-color: #f16d7f;
 }
