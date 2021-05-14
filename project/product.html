@@ -99,7 +99,7 @@
 								<p>$500.00</p>
 							</div>
 							<a href="#" class="basket__check">checkout</a>
-							<a href="#" class="basket__cart">go to cart</a>
+							<a href="cart.html" class="basket__cart">go to cart</a>
 
 						</div>
 					</details>
@@ -880,7 +880,7 @@
 
 
 
-	<script src="https://use.fontawesome.com/498429ed19.js"></script>
+	<!-- <script src="https://use.fontawesome.com/498429ed19.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script>
 		$("[data-collapse]").on("click", function (event) {
@@ -892,7 +892,26 @@
 			$this.toggleClass("active");
 		});
 
+	</script> -->
+
+	<script>
+		let select = function () {
+			let selectHeader = document.querySelectorAll('.accordion__header');
+
+
+			selectHeader.forEach(item => {
+				item.addEventListener('click', selectToggle)
+			});
+
+
+			function selectToggle() {
+				this.classList.toggle('active');
+			}
+		};
+
+		select();
 	</script>
+
 </body>
 
 </html>
