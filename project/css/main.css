@@ -247,10 +247,6 @@ body {
   border: 1px solid #fff;
 }
 
-.basket__title:hover {
-  border-color: #f16d7f;
-}
-
 .basket__menu {
   position: absolute;
   left: 0;
@@ -542,11 +538,60 @@ body {
   margin-bottom: 10px;
 }
 
-.nav__menu-right {
+.nav__menu-home {
+  left: -10px;
+}
+
+.nav__menu-home::before {
+  left: 35px;
+}
+
+.nav__menu-men {
+  left: -52px;
+}
+
+.nav__menu-men::before {
+  left: 109px;
+}
+
+.nav__menu-women {
+  left: -137px;
+}
+
+.nav__menu-women::before {
+  left: 208px;
+}
+
+.nav__menu-kids {
+  left: -261px;
+}
+
+.nav__menu-kids::before {
+  left: 314px;
+}
+
+.nav__menu-accoseriese {
+  left: -354px;
+}
+
+.nav__menu-accoseriese::before {
+  left: 441px;
+}
+
+.nav__menu-featured {
+  right: -125px;
+}
+
+.nav__menu-featured::before {
+  left: auto;
+  right: 161px;
+}
+
+.nav__menu-deals {
   right: 0;
 }
 
-.nav__menu-right::before {
+.nav__menu-deals::before {
   left: auto;
   right: 23px;
 }
@@ -559,6 +604,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  min-width: 235px;
   margin-right: 46px;
 }
 
@@ -1088,8 +1134,14 @@ body {
 }
 
 .subscribe__block {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 165px;
 }
 
 .subscribe__block-title {

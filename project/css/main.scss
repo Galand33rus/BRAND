@@ -194,9 +194,9 @@ body {
 		cursor: pointer;
 		transition: border-color .2s;
 		border: 1px solid #fff;
-		&:hover {
-			border-color: #f16d7f;
-		}
+		// &:hover {
+		// 	border-color: #f16d7f;
+		// }
 	}
 	&__menu {
 		position: absolute;
@@ -435,17 +435,57 @@ body {
 			color: #232323;
 			margin-bottom: 10px;
 		}
-		&-right {
+		&-home {
+			left: -10px;
+			&::before {
+				left: 35px;
+			}
+		}
+		&-men {
+			left: -52px;
+			&::before {
+				left: 109px;
+			}
+		}
+		&-women {
+			left: -137px;
+			&::before {
+				left: 208px;
+			}
+		}
+		&-kids {
+			left: -261px;
+			&::before {
+				left: 314px;
+			}
+		}
+		&-accoseriese {
+			left: -354px;
+			&::before {
+				left: 441px;
+			}
+		}
+		&-featured {
+			right: -125px;
+			&::before {
+				left: auto;
+				right: 161px;
+			}
+		}
+
+		&-deals {
 			right: 0;
 			&::before {
 				left: auto;
 				right: 23px;
 			}
 		}
+
 	}
 	&__box {
 		display: flex;
 		flex-direction: column;
+		min-width: 235px;
 		margin-right: 46px;
 		&:last-of-type {
 			margin-right: 0;
@@ -871,7 +911,9 @@ body {
 		}
 	}
 	&__block {
-		flex-basis: 50%;
+		display: flex;
+    flex-direction: column;
+		margin-left: 165px;
 		&-title {
 			padding-top: 130px;
 			font-size: 24px;
