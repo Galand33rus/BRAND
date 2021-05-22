@@ -293,6 +293,14 @@ body {
   padding-bottom: 17px;
 }
 
+.basket__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid transparent;
+  padding: 5px;
+}
+
 .basket__img {
   margin-right: 15px;
 }
@@ -344,8 +352,10 @@ body {
   cursor: pointer;
 }
 
-.basket__link:hover ~ .busket__info h4 {
-  color: #f16d7f;
+.basket__link:hover ~ .basket__box {
+  border: 1px solid 1px solid #eaeaea;
+  -webkit-box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
 }
 
 .basket__link::after {
@@ -1319,6 +1329,7 @@ body {
 }
 
 .footer__list a {
+  display: block;
   text-decoration: none;
   font-size: 16px;
   line-height: 2.63;

@@ -325,13 +325,6 @@
   background-color: #f16d7f;
 }
 
-/* .description__btn::before {
-	content: '';
-	display: block;
-	background-image: url(../img/basket_r.png);
-	width: 26px;
-	height: 24px;
-} */
 .select {
   margin: 0 auto;
   position: relative;
@@ -346,7 +339,7 @@
   padding-right: 4px;
 }
 
-.select.is-active .select__body {
+.select.active .select__body {
   display: block;
 }
 

@@ -91,10 +91,8 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		// background-image: url(../img/product.jpg);
 		height: 777px;
-		// background-repeat: no-repeat;
-		// background-position: center;
+
 	}
 }
 
@@ -257,13 +255,7 @@
 	}
 }
 
-/* .description__btn::before {
-	content: '';
-	display: block;
-	background-image: url(../img/basket_r.png);
-	width: 26px;
-	height: 24px;
-} */
+
 
 .select {
   margin: 0 auto;
@@ -277,7 +269,7 @@
   color: #bcbcbc;
   cursor: pointer;
   padding-right: 4px;
-	&.is-active .select__body {
+	&.active .select__body {
 		display: block;}
 	&__header {
 		cursor: pointer;

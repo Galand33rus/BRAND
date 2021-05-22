@@ -407,7 +407,7 @@
 			<nav class="crumbs__path">
 				<ul class="crumbs__list">
 					<li class="crumbs__item"><a href="index.html" class="crumbs__link">home</a></li>
-					<li class="crumbs__item"><a href="#" class="crumbs__link">men</a></li>
+					<li class="crumbs__item"><a href="product.html" class="crumbs__link">men</a></li>
 					<li class="crumbs__item crumbs__item-current">New Arrivals</li>
 				</ul>
 			</nav>
@@ -458,7 +458,7 @@
 						CHOOSE COLOR <br>
 						<div class="select">
 							<div class="select__header">
-								<div class="select__item-color"></div>
+								<div class="select__item-color" id="color"></div>
 								<span class="select__current">red</span>
 								<div class="select__icon"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
 							</div>
@@ -506,7 +506,7 @@
 
 					<div class="description__quantity">
 						QUANTITY <br>
-						<input type="text">
+						<input type="number" min="0" max="999">
 					</div>
 				</div>
 				<div class="description__button">
@@ -524,7 +524,7 @@
 			<h3 class="also__title">you may like also</h3>
 			<div class="items__wrapper">
 				<div class="items__card">
-					<a href="#" class="items__info-link" target="_blank">
+					<a href="single.html" class="items__info-link" target="_blank">
 						<img src="img/item9.jpg" alt="item1" class="items__img">
 						<span class="items__name">Mango People T-shirt</span><br>
 						<span class="items__price">$52.00</span>
@@ -535,7 +535,7 @@
 					</div>
 				</div>
 				<div class="items__card">
-					<a href="#" class="items__info-link" target="_blank">
+					<a href="single.html" class="items__info-link" target="_blank">
 						<img src="img/item10.jpg" alt="item2" class="items__img">
 						<span class="items__name">Mango People T-shirt</span><br>
 						<span class="items__price">$52.00</span>
@@ -546,7 +546,7 @@
 					</div>
 				</div>
 				<div class="items__card">
-					<a href="#" class="items__info-link" target="_blank">
+					<a href="single.html" class="items__info-link" target="_blank">
 						<img src="img/item11.jpg" alt="item3" class="items__img">
 						<span class="items__name">Mango People T-shirt</span><br>
 						<span class="items__price">$52.00</span>
@@ -557,7 +557,7 @@
 					</div>
 				</div>
 				<div class="items__card">
-					<a href="#" class="items__info-link" target="_blank">
+					<a href="single.html" class="items__info-link" target="_blank">
 						<img src="img/item12.jpg" alt="item4">
 						<span class="items__name">Mango People T-shirt</span><br>
 						<span class="items__price">$52.00</span>
@@ -685,7 +685,7 @@
 
 	<script>
 		let select = function () {
-			let selectHeader = document.querySelectorAll('.select__header');
+			let selectHeader = document.querySelectorAll('.select');
 			let selectItem = document.querySelectorAll('.select__item');
 			let selectItemColor = document.querySelectorAll('.select__item');
 
@@ -699,7 +699,7 @@
 
 
 			function selectToggle() {
-				this.parentElement.classList.toggle('is-active');
+				this.classList.toggle('active');
 			}
 
 			function selectChoose() {
@@ -707,10 +707,10 @@
 					color = this.firstElementChild.className,
 					select = this.closest('.select'),
 					currentText = select.querySelector('.select__current');
-				currentColor = document.querySelector('.select__header').firstElementChild;
+				currentColor = document.querySelector('#color');
 				currentText.innerText = text;
 				currentColor.className = color;
-				select.classList.remove('is-active');
+				selectHeader.classList.remove('active');
 
 			}
 
