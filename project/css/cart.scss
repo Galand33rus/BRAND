@@ -52,6 +52,10 @@
 			color: $red;
 		}	
 	}
+	&__link {
+		display: block;
+		text-decoration: none;
+	}
 	&__description {
 		margin-left: 21px;
 		font-size: 13px;

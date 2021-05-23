@@ -90,6 +90,9 @@
 			right: 20px;
 			z-index: 1;
 		}
+		&:hover .accordion__title {
+			color: $red;
+		}
 		&:hover:after{
 			color: $red;
 		}
@@ -111,9 +114,6 @@
 		line-height: 1.43;
 		color: #6f6e6e;
 		transition: color .2s;
-		&:hover {
-			color: $red;
-		}
 	}
 	&__content {
 		padding: 15px 20px;
