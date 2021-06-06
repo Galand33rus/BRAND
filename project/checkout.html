@@ -5,7 +5,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Shopping Cart</title>
+	<title>Checkout</title>
+	<link rel="shortcut icon" href="img/logo.png" type="image/png">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/single.css">
 	<link rel="stylesheet" href="css/checkout.css">
@@ -28,9 +29,9 @@
 						</a>
 					</div>
 
-					<details class="browse">
-						<summary class="browse__title">Browse <i class="fa fa-caret-down" aria-hidden="true"></i>
-						</summary>
+					<div class="browse">
+						<div class="browse__title">Browse <i class="fa fa-caret-down" aria-hidden="true"></i>
+						</div>
 						<div class="browse__menu">
 							<p class="browse__menu-title">Women</p>
 							<a class="browse__item" href="#">Dresse</a>
@@ -50,7 +51,7 @@
 							<a class="browse__item" href="#">Blazers</a>
 							<a class="browse__item" href="#">Jackets/Vests</a>
 						</div>
-					</details>
+					</div>
 
 					<form action="#" class="search">
 						<input class="search__input" type="text" placeholder="Search for Item...">
@@ -59,38 +60,43 @@
 				</div>
 
 				<div class="header__right">
-					<details class="basket">
-						<summary class="basket__title">
+					<div class="basket">
+						<div class="basket__title">
 							<img src="img/basket.png" alt="basket">
-						</summary>
+						</div>
 						<div class="basket__menu">
 							<div class="basket__card">
-								<a href="#" class="basket__link"></a>
-								<div class="basket__img">
-									<img src="img/basket1.jpg" alt="">
+								<a href="single.html" class="basket__link"></a>
+								<div class="basket__box">
+									<div class="basket__img">
+										<img src="img/basket1.jpg" alt="basket1">
+									</div>
+									<div class="busket__info">
+										<h4>redox zane</h4>
+										<p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+												class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+												class="fa fa-star-half-o" aria-hidden="true"></i></p>
+										<p class="busket__info-price">1 x $250</p>
+									</div>
 								</div>
-								<div class="busket__info">
-									<h4>redox zane</h4>
-									<p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-											class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-											class="fa fa-star-half-o" aria-hidden="true"></i></p>
-									<p class="busket__info-price">1 x $250</p>
-								</div>
+
 								<div class="basket__close">
 									<p class="basket__close-link"><i class="fa fa-times-circle" aria-hidden="true"></i></p>
 								</div>
 							</div>
 							<div class="basket__card">
-								<a href="#" class="basket__link"></a>
-								<div class="basket__img">
-									<img src="img/basket2.jpg" alt="">
-								</div>
-								<div class="busket__info">
-									<h4>redox zane</h4>
-									<p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-											class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-											class="fa fa-star-half-o" aria-hidden="true"></i></p>
-									<p class="busket__info-price">1 x $250</p>
+								<a href="single.html" class="basket__link"></a>
+								<div class="basket__box">
+									<div class="basket__img">
+										<img src="img/basket2.jpg" alt="basket2">
+									</div>
+									<div class="busket__info">
+										<h4>redox zane</h4>
+										<p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+												class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+												class="fa fa-star-half-o" aria-hidden="true"></i></p>
+										<p class="busket__info-price">1 x $250</p>
+									</div>
 								</div>
 								<div class="basket__close">
 									<p class="basket__close-link"><i class="fa fa-times-circle" aria-hidden="true"></i></p>
@@ -100,11 +106,11 @@
 								<p>total</p>
 								<p>$500.00</p>
 							</div>
-							<a href="#" class="basket__check">checkout</a>
-							<a href="#" class="basket__cart">go to cart</a>
+							<a href="checkout.html" class="basket__check">checkout</a>
+							<a href="cart.html" class="basket__cart">go to cart</a>
 
 						</div>
-					</details>
+					</div>
 
 					<details class="account">
 						<summary class="account__title">My Account <i class="fa fa-caret-down" aria-hidden="true"></i>
@@ -122,7 +128,7 @@
 		<div class="container">
 			<ul class="nav__list">
 				<li><a class="nav__link" href="">Home</a>
-					<div class="nav__menu">
+					<div class="nav__menu nav__menu-home">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -163,7 +169,7 @@
 					</div>
 				</li>
 				<li><a class="nav__link" href="">Man</a>
-					<div class="nav__menu">
+					<div class="nav__menu nav__menu-men">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -202,7 +208,7 @@
 					</div>
 				</li>
 				<li><a class="nav__link" href="">Women</a>
-					<div class="nav__menu">
+					<div class="nav__menu nav__menu-women">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -241,7 +247,7 @@
 					</div>
 				</li>
 				<li><a class="nav__link" href="">Kids</a>
-					<div class="nav__menu">
+					<div class="nav__menu nav__menu-kids">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -280,7 +286,7 @@
 					</div>
 				</li>
 				<li><a class="nav__link" href="">Accoseriese</a>
-					<div class="nav__menu">
+					<div class="nav__menu nav__menu-accoseriese">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -319,7 +325,7 @@
 					</div>
 				</li>
 				<li><a class="nav__link" href="">Featured</a>
-					<div class="nav__menu nav__menu-right">
+					<div class="nav__menu nav__menu-featured">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -358,7 +364,7 @@
 					</div>
 				</li>
 				<li><a class="nav__link" href="">Hot Deals</a>
-					<div class="nav__menu nav__menu-right">
+					<div class="nav__menu nav__menu-deals">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -408,7 +414,7 @@
 			<nav class="crumbs__path">
 				<ul class="crumbs__list">
 					<li class="crumbs__item"><a href="index.html" class="crumbs__link">home</a></li>
-					<li class="crumbs__item"><a href="#" class="crumbs__link">men</a></li>
+					<li class="crumbs__item"><a href="product.html" class="crumbs__link">men</a></li>
 					<li class="crumbs__item crumbs__item-current">New Arrivals</li>
 				</ul>
 			</nav>
@@ -418,12 +424,8 @@
 	<section class="checkout">
 		<div class="container">
 
-
-
-
-
-			<div class="checkout__header active" data-collapse="#data_1">
-				<div class="checkout__title">
+			<div class="checkout__header">
+				<div class="checkout__title active" data-collapse="#data_1">
 					<span>01.</span>Shipping Adress
 				</div>
 				<div class="checkout__content" id="data_1">
@@ -431,11 +433,17 @@
 						<p class="checkout__content-guest-title">Check as a guest or register</p>
 						<p class="checkout__content-guest-text">Register with us for future convenience</p>
 						<form action="#" class="form__guest">
-							<input class="form__guest-input" type="radio" name="check" id="guest">
-							<label class="form__guest-label" for="guest">checkout as guest</label>
-							<br>
-							<input class="form__guest-input" type="radio" name="check" id="register">
-							<label class="form__guest-label" for="register">register</label>
+							<div class="form__guest-wrapper">
+								<input class="form__guest-input" type="radio" name="check" id="guest">
+								<label class="form__guest-label" for="guest">checkout as guest</label>
+							</div>
+							<div class="form__guest-wrapper">
+								<input class="form__guest-input" type="radio" name="check" id="register">
+								<label class="form__guest-label" for="register">register</label>
+							</div>
+
+
+
 							<p class="checkout__content-guest-title">register and save time!</p>
 							<p class="checkout__content-guest-text">Register with us for future convenience</p>
 							<a href="#" class="form__guest-link">Fast and easy checkout</a>
@@ -458,8 +466,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="checkout__header" data-collapse="#data_2">
-				<div class="checkout__title">
+			<div class="checkout__header">
+				<div class="checkout__title" data-collapse="#data_2">
 					<span>02.</span>BILLING INFORMATION
 				</div>
 				<div class="checkout__content" id="data_2">
@@ -500,8 +508,8 @@
 					quod non autem neque nihil accusantium voluptatibus iste est facere sint vero at. Voluptate.
 				</div>
 			</div>
-			<div class="checkout__header" data-collapse="#data_3">
-				<div class="checkout__title">
+			<div class="checkout__header">
+				<div class="checkout__title" data-collapse="#data_3">
 					<span>03.</span>SHIPPING INFORMATION
 				</div>
 				<div class="checkout__content" id="data_3">
@@ -543,8 +551,8 @@
 					enim quas nulla voluptatibus dignissimos harum quod debitis voluptate id quibusdam!
 				</div>
 			</div>
-			<div class="checkout__header" data-collapse="#data_4">
-				<div class="checkout__title">
+			<div class="checkout__header">
+				<div class="checkout__title" data-collapse="#data_4">
 					<span>04.</span>SHIPPING METHOD
 				</div>
 				<div class="checkout__content" id="data_4">
@@ -586,8 +594,8 @@
 					impedit deserunt saepe aperiam?
 				</div>
 			</div>
-			<div class="checkout__header" data-collapse="#data_5">
-				<div class="checkout__title">
+			<div class="checkout__header">
+				<div class="checkout__title" data-collapse="#data_5">
 					<span>05.</span>PAYMENT METHOD
 				</div>
 				<div class="checkout__content" id="data_5">
@@ -629,8 +637,8 @@
 					inventore? Doloremque dolores atque sed hic?
 				</div>
 			</div>
-			<div class="checkout__header" data-collapse="#data_6">
-				<div class="checkout__title">
+			<div class="checkout__header">
+				<div class="checkout__title" data-collapse="#data_6">
 					<span>06.</span>ORDER REVIEW
 				</div>
 				<div class="checkout__content" id="data_6">
@@ -768,7 +776,7 @@
 				<div class="footer__copy">
 					&copy; 2021 Brand All Rights Reserved.
 				</div>
-				
+
 				<nav class="footer__social">
 					<ul class="footer__social-list">
 						<li><a href="http://facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -785,7 +793,7 @@
 
 		</div>
 	</footer>
-	<script src="https://use.fontawesome.com/498429ed19.js"></script>
+	<!-- <script src="https://use.fontawesome.com/498429ed19.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script>
 		$("[data-collapse]").on("click", function (event) {
@@ -797,7 +805,26 @@
 			$this.toggleClass("active");
 		});
 
+	</script> -->
+
+	<script>
+		let select = function () {
+			let selectHeader = document.querySelectorAll('.checkout__title');
+
+
+			selectHeader.forEach(item => {
+				item.addEventListener('click', selectToggle)
+			});
+
+
+			function selectToggle() {
+				this.classList.toggle('active');
+			}
+		};
+
+		select();
 	</script>
+
 </body>
 
 </html>

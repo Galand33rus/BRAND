@@ -24,6 +24,9 @@
 		letter-spacing: -0.2px;
 		color: #222222;
 		text-transform: uppercase;
+		&-width {
+			width: 300px;
+		}
 	}
 	&__item {
 		display: flex;
@@ -38,6 +41,7 @@
 	&__product {
 		display: flex;
 		padding: 2px;
+		min-width: 316px;
 		// transition: all .2s;
 		&:hover {
 			cursor: pointer;
@@ -47,6 +51,10 @@
 		&:hover .cart__description-title {
 			color: $red;
 		}	
+	}
+	&__link {
+		display: block;
+		text-decoration: none;
 	}
 	&__description {
 		margin-left: 21px;
@@ -110,7 +118,7 @@
 		color: #4a4a4a;
 		transition: all .2s;
 		&:hover {
-			color: #000;
+			color: $white;
 			cursor: pointer;
 			background-color: $red;
 		}
@@ -168,7 +176,7 @@
 				cursor: pointer;
 				&:hover {
 					background-color: $red;
-					color: #000;
+					color: $white;
 				}
 			}
 		}
@@ -209,7 +217,7 @@
 				cursor: pointer;
 				&:hover {
 					background-color: $red;
-					color: #000;
+					color: $white;
 				}
 			}
 		}
@@ -250,12 +258,15 @@
 			color: $white;
 			text-decoration: none;
 			text-transform: uppercase;
-			transition: color .2s;
-			padding: 19px 42px;
+			transition: all .2s;
+			padding: 19px 41px;
   		background-color: $red;
+			border: 1px solid transparent;
 			
 			&:hover {
-				color: #000;
+				color: $red;
+				background-color: $white;
+				border-color: $red;
 			}
 		}
 	}	

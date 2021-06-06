@@ -33,6 +33,10 @@
   text-transform: uppercase;
 }
 
+.cart__column-width {
+  width: 300px;
+}
+
 .cart__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,6 +56,7 @@
   display: -ms-flexbox;
   display: flex;
   padding: 2px;
+  min-width: 316px;
 }
 
 .cart__product:hover {
@@ -63,6 +68,11 @@
 
 .cart__product:hover .cart__description-title {
   color: #f16d7f;
+}
+
+.cart__link {
+  display: block;
+  text-decoration: none;
 }
 
 .cart__description {
@@ -147,7 +157,7 @@
 }
 
 .cart__button:hover {
-  color: #000;
+  color: #fff;
   cursor: pointer;
   background-color: #f16d7f;
 }
@@ -236,7 +246,7 @@
 
 .cart__adress-form-btn:hover {
   background-color: #f16d7f;
-  color: #000;
+  color: #fff;
 }
 
 .cart__discount-subtitle {
@@ -299,7 +309,7 @@
 
 .cart__discount-form-btn:hover {
   background-color: #f16d7f;
-  color: #000;
+  color: #fff;
 }
 
 .cart__total {
@@ -344,12 +354,15 @@
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-transition: color .2s;
-  transition: color .2s;
-  padding: 19px 42px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  padding: 19px 41px;
   background-color: #f16d7f;
+  border: 1px solid transparent;
 }
 
 .cart__total-btn:hover {
-  color: #000;
+  color: #f16d7f;
+  background-color: #fff;
+  border-color: #f16d7f;
 }

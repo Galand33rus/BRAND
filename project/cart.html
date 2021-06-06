@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Shopping Cart</title>
+	<link rel="shortcut icon" href="img/logo.png" type="image/png">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/single.css">
 	<link rel="stylesheet" href="css/cart.css">
@@ -28,9 +29,9 @@
 						</a>
 					</div>
 
-					<details class="browse">
-						<summary class="browse__title">Browse <i class="fa fa-caret-down" aria-hidden="true"></i>
-						</summary>
+					<div class="browse">
+						<div class="browse__title">Browse <i class="fa fa-caret-down" aria-hidden="true"></i>
+						</div>
 						<div class="browse__menu">
 							<p class="browse__menu-title">Women</p>
 							<a class="browse__item" href="#">Dresse</a>
@@ -50,7 +51,7 @@
 							<a class="browse__item" href="#">Blazers</a>
 							<a class="browse__item" href="#">Jackets/Vests</a>
 						</div>
-					</details>
+					</div>
 
 					<form action="#" class="search">
 						<input class="search__input" type="text" placeholder="Search for Item...">
@@ -59,38 +60,43 @@
 				</div>
 
 				<div class="header__right">
-					<details class="basket">
-						<summary class="basket__title">
+					<div class="basket">
+						<div class="basket__title">
 							<img src="img/basket.png" alt="basket">
-						</summary>
+						</div>
 						<div class="basket__menu">
 							<div class="basket__card">
-								<a href="#" class="basket__link"></a>
-								<div class="basket__img">
-									<img src="img/basket1.jpg" alt="">
+								<a href="single.html" class="basket__link"></a>
+								<div class="basket__box">
+									<div class="basket__img">
+										<img src="img/basket1.jpg" alt="basket1">
+									</div>
+									<div class="busket__info">
+										<h4>redox zane</h4>
+										<p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+												class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+												class="fa fa-star-half-o" aria-hidden="true"></i></p>
+										<p class="busket__info-price">1 x $250</p>
+									</div>
 								</div>
-								<div class="busket__info">
-									<h4>redox zane</h4>
-									<p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-											class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-											class="fa fa-star-half-o" aria-hidden="true"></i></p>
-									<p class="busket__info-price">1 x $250</p>
-								</div>
+
 								<div class="basket__close">
 									<p class="basket__close-link"><i class="fa fa-times-circle" aria-hidden="true"></i></p>
 								</div>
 							</div>
 							<div class="basket__card">
-								<a href="#" class="basket__link"></a>
-								<div class="basket__img">
-									<img src="img/basket2.jpg" alt="">
-								</div>
-								<div class="busket__info">
-									<h4>redox zane</h4>
-									<p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-											class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-											class="fa fa-star-half-o" aria-hidden="true"></i></p>
-									<p class="busket__info-price">1 x $250</p>
+								<a href="single.html" class="basket__link"></a>
+								<div class="basket__box">
+									<div class="basket__img">
+										<img src="img/basket2.jpg" alt="basket2">
+									</div>
+									<div class="busket__info">
+										<h4>redox zane</h4>
+										<p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+												class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+												class="fa fa-star-half-o" aria-hidden="true"></i></p>
+										<p class="busket__info-price">1 x $250</p>
+									</div>
 								</div>
 								<div class="basket__close">
 									<p class="basket__close-link"><i class="fa fa-times-circle" aria-hidden="true"></i></p>
@@ -100,11 +106,11 @@
 								<p>total</p>
 								<p>$500.00</p>
 							</div>
-							<a href="#" class="basket__check">checkout</a>
-							<a href="#" class="basket__cart">go to cart</a>
+							<a href="checkout.html" class="basket__check">checkout</a>
+							<a href="cart.html" class="basket__cart">go to cart</a>
 
 						</div>
-					</details>
+					</div>
 
 					<details class="account">
 						<summary class="account__title">My Account <i class="fa fa-caret-down" aria-hidden="true"></i>
@@ -122,7 +128,7 @@
 		<div class="container">
 			<ul class="nav__list">
 				<li><a class="nav__link" href="">Home</a>
-					<div class="nav__menu">
+					<div class="nav__menu nav__menu-home">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -163,7 +169,7 @@
 					</div>
 				</li>
 				<li><a class="nav__link" href="">Man</a>
-					<div class="nav__menu">
+					<div class="nav__menu nav__menu-men">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -202,7 +208,7 @@
 					</div>
 				</li>
 				<li><a class="nav__link" href="">Women</a>
-					<div class="nav__menu">
+					<div class="nav__menu nav__menu-women">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -241,7 +247,7 @@
 					</div>
 				</li>
 				<li><a class="nav__link" href="">Kids</a>
-					<div class="nav__menu">
+					<div class="nav__menu nav__menu-kids">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -280,7 +286,7 @@
 					</div>
 				</li>
 				<li><a class="nav__link" href="">Accoseriese</a>
-					<div class="nav__menu">
+					<div class="nav__menu nav__menu-accoseriese">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -319,7 +325,7 @@
 					</div>
 				</li>
 				<li><a class="nav__link" href="">Featured</a>
-					<div class="nav__menu nav__menu-right">
+					<div class="nav__menu nav__menu-featured">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -358,7 +364,7 @@
 					</div>
 				</li>
 				<li><a class="nav__link" href="">Hot Deals</a>
-					<div class="nav__menu nav__menu-right">
+					<div class="nav__menu nav__menu-deals">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -408,7 +414,7 @@
 			<nav class="crumbs__path">
 				<ul class="crumbs__list">
 					<li class="crumbs__item"><a href="index.html" class="crumbs__link">home</a></li>
-					<li class="crumbs__item"><a href="#" class="crumbs__link">men</a></li>
+					<li class="crumbs__item"><a href="product.html" class="crumbs__link">men</a></li>
 					<li class="crumbs__item crumbs__item-current">New Arrivals</li>
 				</ul>
 			</nav>
@@ -419,7 +425,7 @@
 		<div class="container">
 			<div class="cart__wrapper">
 				<div class="cart__title cart__title-left">
-					<p class="cart__column">Product Details</p>
+					<p class="cart__column cart__column-width">Product Details</p>
 
 				</div>
 				<div class="cart__title cart__title-right">
@@ -433,22 +439,25 @@
 
 
 			<div class="cart__item">
-				<div class="cart__product">
-					<div class="cart__info">
-						<img src="img/cart1.jpg" alt="cart1" class="card__img">
+				<a href="single.html" class="cart__link">
+					<div class="cart__product">
+						<div class="cart__info">
+							<img src="img/cart1.jpg" alt="cart1" class="card__img">
+						</div>
+						<div class="cart__description">
+							<p class="cart__description-title">Mango People T-shirt</p>
+							<p class="cart__description-text">Color:<span>Red</span></p>
+							<p class="cart__description-text">Size:<span>Xll</span></p>
+						</div>
 					</div>
-					<div class="cart__description">
-						<p class="cart__description-title">Mango People T-shirt</p>
-						<p class="cart__description-text">Color:<span>Red</span></p>
-						<p class="cart__description-text">Size:<span>Xll</span></p>
-					</div>
-				</div>
+				</a>
+
 				<div class="cart__data">
 					<div class="cart__price">
 						$150
 					</div>
 					<div class="cart__quantity">
-						<input type="number" class="cart__quantity-data" value="2" max="99">
+						<input type="number" class="cart__quantity-data" value="2" min="0" max="99">
 					</div>
 					<div class="cart__shipping">
 						FREE
@@ -465,22 +474,25 @@
 			</div>
 
 			<div class="cart__item">
-				<div class="cart__product">
-					<div class="cart__info">
-						<img src="img/cart2.jpg" alt="cart2" class="card__img">
+				<a href="single.html" class="cart__link">
+					<div class="cart__product">
+						<div class="cart__info">
+							<img src="img/cart2.jpg" alt="cart2" class="card__img">
+						</div>
+						<div class="cart__description">
+							<p class="cart__description-title">Mango People T-shirt</p>
+							<p class="cart__description-text">Color:<span>Red</span></p>
+							<p class="cart__description-text">Size:<span>Xll</span></p>
+						</div>
 					</div>
-					<div class="cart__description">
-						<p class="cart__description-title">Mango People T-shirt</p>
-						<p class="cart__description-text">Color:<span>Red</span></p>
-						<p class="cart__description-text">Size:<span>Xll</span></p>
-					</div>
-				</div>
+				</a>
+
 				<div class="cart__data">
 					<div class="cart__price">
 						$150
 					</div>
 					<div class="cart__quantity">
-						<input type="number" class="cart__quantity-data" value="2" max="99">
+						<input type="number" class="cart__quantity-data" value="2" min="0" max="99">
 					</div>
 					<div class="cart__shipping">
 						FREE
@@ -497,22 +509,25 @@
 			</div>
 
 			<div class="cart__item">
-				<div class="cart__product">
-					<div class="cart__info">
-						<img src="img/cart3.jpg" alt="cart3" class="card__img">
+				<a href="single.html" class="cart__link">
+					<div class="cart__product">
+						<div class="cart__info">
+							<img src="img/cart3.jpg" alt="cart3" class="card__img">
+						</div>
+						<div class="cart__description">
+							<p class="cart__description-title">Mango People T-shirt</p>
+							<p class="cart__description-text">Color:<span>Red</span></p>
+							<p class="cart__description-text">Size:<span>Xll</span></p>
+						</div>
 					</div>
-					<div class="cart__description">
-						<p class="cart__description-title">Mango People T-shirt</p>
-						<p class="cart__description-text">Color:<span>Red</span></p>
-						<p class="cart__description-text">Size:<span>Xll</span></p>
-					</div>
-				</div>
+				</a>
+
 				<div class="cart__data">
 					<div class="cart__price">
 						$150
 					</div>
 					<div class="cart__quantity">
-						<input type="number" class="cart__quantity-data" value="2" max="99">
+						<input type="number" class="cart__quantity-data" value="2" min="0" max="99">
 					</div>
 					<div class="cart__shipping">
 						FREE
@@ -643,7 +658,7 @@
 							<li><a href="javascript:void(0);">Promotion</a></li>
 						</ul>
 					</div>
-					
+
 					<div class="footer__category">
 						<p class="footer__title">SHOP CATEGORY</p>
 						<ul class="footer__list">

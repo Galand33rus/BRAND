@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Product</title>
+	<link rel="shortcut icon" href="img/logo.png" type="image/png">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/product.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -26,9 +27,9 @@
 						</a>
 					</div>
 
-					<details class="browse">
-						<summary class="browse__title">Browse <i class="fa fa-caret-down" aria-hidden="true"></i>
-						</summary>
+					<div class="browse">
+						<div class="browse__title">Browse <i class="fa fa-caret-down" aria-hidden="true"></i>
+						</div>
 						<div class="browse__menu">
 							<p class="browse__menu-title">Women</p>
 							<a class="browse__item" href="#">Dresse</a>
@@ -48,7 +49,7 @@
 							<a class="browse__item" href="#">Blazers</a>
 							<a class="browse__item" href="#">Jackets/Vests</a>
 						</div>
-					</details>
+					</div>
 
 					<form action="#" class="search">
 						<input class="search__input" type="text" placeholder="Search for Item...">
@@ -57,38 +58,43 @@
 				</div>
 
 				<div class="header__right">
-					<details class="basket">
-						<summary class="basket__title">
+					<div class="basket">
+						<div class="basket__title">
 							<img src="img/basket.png" alt="basket">
-						</summary>
+						</div>
 						<div class="basket__menu">
 							<div class="basket__card">
-								<a href="#" class="basket__link"></a>
-								<div class="basket__img">
-									<img src="img/basket1.jpg" alt="">
+								<a href="single.html" class="basket__link"></a>
+								<div class="basket__box">
+									<div class="basket__img">
+										<img src="img/basket1.jpg" alt="basket1">
+									</div>
+									<div class="busket__info">
+										<h4>redox zane</h4>
+										<p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+												class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+												class="fa fa-star-half-o" aria-hidden="true"></i></p>
+										<p class="busket__info-price">1 x $250</p>
+									</div>
 								</div>
-								<div class="busket__info">
-									<h4>redox zane</h4>
-									<p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-											class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-											class="fa fa-star-half-o" aria-hidden="true"></i></p>
-									<p class="busket__info-price">1 x $250</p>
-								</div>
+
 								<div class="basket__close">
 									<p class="basket__close-link"><i class="fa fa-times-circle" aria-hidden="true"></i></p>
 								</div>
 							</div>
 							<div class="basket__card">
-								<a href="#" class="basket__link"></a>
-								<div class="basket__img">
-									<img src="img/basket2.jpg" alt="">
-								</div>
-								<div class="busket__info">
-									<h4>redox zane</h4>
-									<p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-											class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-											class="fa fa-star-half-o" aria-hidden="true"></i></p>
-									<p class="busket__info-price">1 x $250</p>
+								<a href="single.html" class="basket__link"></a>
+								<div class="basket__box">
+									<div class="basket__img">
+										<img src="img/basket2.jpg" alt="basket2">
+									</div>
+									<div class="busket__info">
+										<h4>redox zane</h4>
+										<p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+												class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+												class="fa fa-star-half-o" aria-hidden="true"></i></p>
+										<p class="busket__info-price">1 x $250</p>
+									</div>
 								</div>
 								<div class="basket__close">
 									<p class="basket__close-link"><i class="fa fa-times-circle" aria-hidden="true"></i></p>
@@ -98,11 +104,11 @@
 								<p>total</p>
 								<p>$500.00</p>
 							</div>
-							<a href="#" class="basket__check">checkout</a>
-							<a href="#" class="basket__cart">go to cart</a>
+							<a href="checkout.html" class="basket__check">checkout</a>
+							<a href="cart.html" class="basket__cart">go to cart</a>
 
 						</div>
-					</details>
+					</div>
 
 					<details class="account">
 						<summary class="account__title">My Account <i class="fa fa-caret-down" aria-hidden="true"></i>
@@ -120,7 +126,7 @@
 		<div class="container">
 			<ul class="nav__list">
 				<li><a class="nav__link" href="">Home</a>
-					<div class="nav__menu">
+					<div class="nav__menu nav__menu-home">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -161,7 +167,7 @@
 					</div>
 				</li>
 				<li><a class="nav__link" href="">Man</a>
-					<div class="nav__menu">
+					<div class="nav__menu nav__menu-men">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -200,7 +206,7 @@
 					</div>
 				</li>
 				<li><a class="nav__link" href="">Women</a>
-					<div class="nav__menu">
+					<div class="nav__menu nav__menu-women">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -239,7 +245,7 @@
 					</div>
 				</li>
 				<li><a class="nav__link" href="">Kids</a>
-					<div class="nav__menu">
+					<div class="nav__menu nav__menu-kids">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -278,7 +284,7 @@
 					</div>
 				</li>
 				<li><a class="nav__link" href="">Accoseriese</a>
-					<div class="nav__menu">
+					<div class="nav__menu nav__menu-accoseriese">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -317,7 +323,7 @@
 					</div>
 				</li>
 				<li><a class="nav__link" href="">Featured</a>
-					<div class="nav__menu nav__menu-right">
+					<div class="nav__menu nav__menu-featured">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -356,7 +362,7 @@
 					</div>
 				</li>
 				<li><a class="nav__link" href="">Hot Deals</a>
-					<div class="nav__menu nav__menu-right">
+					<div class="nav__menu nav__menu-deals">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -406,7 +412,7 @@
 			<nav class="crumbs__path">
 				<ul class="crumbs__list">
 					<li class="crumbs__item"><a href="index.html" class="crumbs__link">home</a></li>
-					<li class="crumbs__item"><a href="#" class="crumbs__link">men</a></li>
+					<li class="crumbs__item"><a href="product.html" class="crumbs__link">men</a></li>
 					<li class="crumbs__item crumbs__item-current">New Arrivals</li>
 				</ul>
 			</nav>
@@ -418,66 +424,66 @@
 
 			<div class="accordion">
 
-				<div class="accordion__item active" data-collapse="#data_1">
-					<div class="accordion__header">
+				<div class="accordion__item">
+					<div class="accordion__header active" data-collapse="#data_1">
 						<div class="accordion__title">Category</div>
 					</div>
 					<div class="accordion__content" id="data_1">
-						<a href="#" class="accordion__link">Accessories</a>
-						<a href="#" class="accordion__link">Bags</a>
-						<a href="#" class="accordion__link">Denim</a>
-						<a href="#" class="accordion__link">Hoodies & Sweatshirts</a>
-						<a href="#" class="accordion__link">Jackets & Coats</a>
-						<a href="#" class="accordion__link">Pants</a>
-						<a href="#" class="accordion__link">Polos</a>
-						<a href="#" class="accordion__link">Shirts</a>
-						<a href="#" class="accordion__link">Shoes</a>
-						<a href="#" class="accordion__link">Shorts</a>
-						<a href="#" class="accordion__link">Sweaters & Knits</a>
-						<a href="#" class="accordion__link">T-Shirts</a>
-						<a href="#" class="accordion__link">Tanks</a>
+						<a href="javascript:void(0);" class="accordion__link">Accessories</a>
+						<a href="javascript:void(0);" class="accordion__link">Bags</a>
+						<a href="javascript:void(0);" class="accordion__link">Denim</a>
+						<a href="javascript:void(0);" class="accordion__link">Hoodies & Sweatshirts</a>
+						<a href="javascript:void(0);" class="accordion__link">Jackets & Coats</a>
+						<a href="javascript:void(0);" class="accordion__link">Pants</a>
+						<a href="javascript:void(0);" class="accordion__link">Polos</a>
+						<a href="javascript:void(0);" class="accordion__link">Shirts</a>
+						<a href="javascript:void(0);" class="accordion__link">Shoes</a>
+						<a href="javascript:void(0);" class="accordion__link">Shorts</a>
+						<a href="javascript:void(0);" class="accordion__link">Sweaters & Knits</a>
+						<a href="javascript:void(0);" class="accordion__link">T-Shirts</a>
+						<a href="javascript:void(0);" class="accordion__link">Tanks</a>
 					</div>
 				</div>
 
-				<div class="accordion__item " data-collapse="#data_2">
-					<div class="accordion__header">
+				<div class="accordion__item ">
+					<div class="accordion__header" data-collapse="#data_2">
 						<div class="accordion__title">BRAND</div>
 					</div>
 					<div class="accordion__content" id="data_2">
-						<a href="#" class="accordion__link">Accessories</a>
-						<a href="#" class="accordion__link">Bags</a>
-						<a href="#" class="accordion__link">Denim</a>
-						<a href="#" class="accordion__link">Hoodies & Sweatshirts</a>
-						<a href="#" class="accordion__link">Jackets & Coats</a>
-						<a href="#" class="accordion__link">Pants</a>
-						<a href="#" class="accordion__link">Polos</a>
-						<a href="#" class="accordion__link">Shirts</a>
-						<a href="#" class="accordion__link">Shoes</a>
-						<a href="#" class="accordion__link">Shorts</a>
-						<a href="#" class="accordion__link">Sweaters & Knits</a>
-						<a href="#" class="accordion__link">T-Shirts</a>
-						<a href="#" class="accordion__link">Tanks</a>
+						<a href="javascript:void(0);" class="accordion__link">Accessories</a>
+						<a href="javascript:void(0);" class="accordion__link">Bags</a>
+						<a href="javascript:void(0);" class="accordion__link">Denim</a>
+						<a href="javascript:void(0);" class="accordion__link">Hoodies & Sweatshirts</a>
+						<a href="javascript:void(0);" class="accordion__link">Jackets & Coats</a>
+						<a href="javascript:void(0);" class="accordion__link">Pants</a>
+						<a href="javascript:void(0);" class="accordion__link">Polos</a>
+						<a href="javascript:void(0);" class="accordion__link">Shirts</a>
+						<a href="javascript:void(0);" class="accordion__link">Shoes</a>
+						<a href="javascript:void(0);" class="accordion__link">Shorts</a>
+						<a href="javascript:void(0);" class="accordion__link">Sweaters & Knits</a>
+						<a href="javascript:void(0);" class="accordion__link">T-Shirts</a>
+						<a href="javascript:void(0);" class="accordion__link">Tanks</a>
 					</div>
 				</div>
 
-				<div class="accordion__item" data-collapse="#data_3">
-					<div class="accordion__header">
+				<div class="accordion__item">
+					<div class="accordion__header" data-collapse="#data_3">
 						<div class="accordion__title">dESIGNER</div>
 					</div>
 					<div class="accordion__content" id="data_3">
-						<a href="#" class="accordion__link">Accessories</a>
-						<a href="#" class="accordion__link">Bags</a>
-						<a href="#" class="accordion__link">Denim</a>
-						<a href="#" class="accordion__link">Hoodies & Sweatshirts</a>
-						<a href="#" class="accordion__link">Jackets & Coats</a>
-						<a href="#" class="accordion__link">Pants</a>
-						<a href="#" class="accordion__link">Polos</a>
-						<a href="#" class="accordion__link">Shirts</a>
-						<a href="#" class="accordion__link">Shoes</a>
-						<a href="#" class="accordion__link">Shorts</a>
-						<a href="#" class="accordion__link">Sweaters & Knits</a>
-						<a href="#" class="accordion__link">T-Shirts</a>
-						<a href="#" class="accordion__link">Tanks</a>
+						<a href="javascript:void(0);" class="accordion__link">Accessories</a>
+						<a href="javascript:void(0);" class="accordion__link">Bags</a>
+						<a href="javascript:void(0);" class="accordion__link">Denim</a>
+						<a href="javascript:void(0);" class="accordion__link">Hoodies & Sweatshirts</a>
+						<a href="javascript:void(0);" class="accordion__link">Jackets & Coats</a>
+						<a href="javascript:void(0);" class="accordion__link">Pants</a>
+						<a href="javascript:void(0);" class="accordion__link">Polos</a>
+						<a href="javascript:void(0);" class="accordion__link">Shirts</a>
+						<a href="javascript:void(0);" class="accordion__link">Shoes</a>
+						<a href="javascript:void(0);" class="accordion__link">Shorts</a>
+						<a href="javascript:void(0);" class="accordion__link">Sweaters & Knits</a>
+						<a href="javascript:void(0);" class="accordion__link">T-Shirts</a>
+						<a href="javascript:void(0);" class="accordion__link">Tanks</a>
 					</div>
 				</div>
 			</div><!-- /.accordion -->
@@ -533,7 +539,7 @@
 							<div class="product__prise">
 								<p class="product__title">price</p>
 								<input id="range" type="range" value="100" step="1" class="product__range" min="0" max="1000">
-								<p>$:
+								<p>$
 									<output name="result" for="range">100</output>
 								</p>
 							</div>
@@ -747,7 +753,7 @@
 							with extensive models.</p>
 					</div>
 				</div>
-				
+
 				<div class="banner__info-box">
 					<a href="#" class="banner__info-link"></a>
 					<div class="banner__info-image">
@@ -880,7 +886,7 @@
 
 
 
-	<script src="https://use.fontawesome.com/498429ed19.js"></script>
+	<!-- <script src="https://use.fontawesome.com/498429ed19.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script>
 		$("[data-collapse]").on("click", function (event) {
@@ -892,7 +898,26 @@
 			$this.toggleClass("active");
 		});
 
+	</script> -->
+
+	<script>
+		let select = function () {
+			let selectHeader = document.querySelectorAll('.accordion__header');
+
+
+			selectHeader.forEach(item => {
+				item.addEventListener('click', selectToggle)
+			});
+
+
+			function selectToggle() {
+				this.classList.toggle('active');
+			}
+		};
+
+		select();
 	</script>
+
 </body>
 
 </html>

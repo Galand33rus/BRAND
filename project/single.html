@@ -6,12 +6,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Single Page</title>
+	<link rel="shortcut icon" href="img/logo.png" type="image/png">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/single.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -26,9 +28,9 @@
 						</a>
 					</div>
 
-					<details class="browse">
-						<summary class="browse__title">Browse <i class="fa fa-caret-down" aria-hidden="true"></i>
-						</summary>
+					<div class="browse">
+						<div class="browse__title">Browse <i class="fa fa-caret-down" aria-hidden="true"></i>
+						</div>
 						<div class="browse__menu">
 							<p class="browse__menu-title">Women</p>
 							<a class="browse__item" href="#">Dresse</a>
@@ -48,7 +50,7 @@
 							<a class="browse__item" href="#">Blazers</a>
 							<a class="browse__item" href="#">Jackets/Vests</a>
 						</div>
-					</details>
+					</div>
 
 					<form action="#" class="search">
 						<input class="search__input" type="text" placeholder="Search for Item...">
@@ -57,38 +59,43 @@
 				</div>
 
 				<div class="header__right">
-					<details class="basket">
-						<summary class="basket__title">
+					<div class="basket">
+						<div class="basket__title">
 							<img src="img/basket.png" alt="basket">
-						</summary>
+						</div>
 						<div class="basket__menu">
 							<div class="basket__card">
-								<a href="#" class="basket__link"></a>
-								<div class="basket__img">
-									<img src="img/basket1.jpg" alt="">
+								<a href="single.html" class="basket__link"></a>
+								<div class="basket__box">
+									<div class="basket__img">
+										<img src="img/basket1.jpg" alt="basket1">
+									</div>
+									<div class="busket__info">
+										<h4>redox zane</h4>
+										<p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+												class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+												class="fa fa-star-half-o" aria-hidden="true"></i></p>
+										<p class="busket__info-price">1 x $250</p>
+									</div>
 								</div>
-								<div class="busket__info">
-									<h4>redox zane</h4>
-									<p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-											class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-											class="fa fa-star-half-o" aria-hidden="true"></i></p>
-									<p class="busket__info-price">1 x $250</p>
-								</div>
+
 								<div class="basket__close">
 									<p class="basket__close-link"><i class="fa fa-times-circle" aria-hidden="true"></i></p>
 								</div>
 							</div>
 							<div class="basket__card">
-								<a href="#" class="basket__link"></a>
-								<div class="basket__img">
-									<img src="img/basket2.jpg" alt="">
-								</div>
-								<div class="busket__info">
-									<h4>redox zane</h4>
-									<p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-											class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-											class="fa fa-star-half-o" aria-hidden="true"></i></p>
-									<p class="busket__info-price">1 x $250</p>
+								<a href="single.html" class="basket__link"></a>
+								<div class="basket__box">
+									<div class="basket__img">
+										<img src="img/basket2.jpg" alt="basket2">
+									</div>
+									<div class="busket__info">
+										<h4>redox zane</h4>
+										<p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+												class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+												class="fa fa-star-half-o" aria-hidden="true"></i></p>
+										<p class="busket__info-price">1 x $250</p>
+									</div>
 								</div>
 								<div class="basket__close">
 									<p class="basket__close-link"><i class="fa fa-times-circle" aria-hidden="true"></i></p>
@@ -98,11 +105,11 @@
 								<p>total</p>
 								<p>$500.00</p>
 							</div>
-							<a href="#" class="basket__check">checkout</a>
-							<a href="#" class="basket__cart">go to cart</a>
+							<a href="checkout.html" class="basket__check">checkout</a>
+							<a href="cart.html" class="basket__cart">go to cart</a>
 
 						</div>
-					</details>
+					</div>
 
 					<details class="account">
 						<summary class="account__title">My Account <i class="fa fa-caret-down" aria-hidden="true"></i>
@@ -120,7 +127,7 @@
 		<div class="container">
 			<ul class="nav__list">
 				<li><a class="nav__link" href="">Home</a>
-					<div class="nav__menu">
+					<div class="nav__menu nav__menu-home">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -161,7 +168,7 @@
 					</div>
 				</li>
 				<li><a class="nav__link" href="">Man</a>
-					<div class="nav__menu">
+					<div class="nav__menu nav__menu-men">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -200,7 +207,7 @@
 					</div>
 				</li>
 				<li><a class="nav__link" href="">Women</a>
-					<div class="nav__menu">
+					<div class="nav__menu nav__menu-women">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -239,7 +246,7 @@
 					</div>
 				</li>
 				<li><a class="nav__link" href="">Kids</a>
-					<div class="nav__menu">
+					<div class="nav__menu nav__menu-kids">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -278,7 +285,7 @@
 					</div>
 				</li>
 				<li><a class="nav__link" href="">Accoseriese</a>
-					<div class="nav__menu">
+					<div class="nav__menu nav__menu-accoseriese">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -317,7 +324,7 @@
 					</div>
 				</li>
 				<li><a class="nav__link" href="">Featured</a>
-					<div class="nav__menu nav__menu-right">
+					<div class="nav__menu nav__menu-featured">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -356,7 +363,7 @@
 					</div>
 				</li>
 				<li><a class="nav__link" href="">Hot Deals</a>
-					<div class="nav__menu nav__menu-right">
+					<div class="nav__menu nav__menu-deals">
 						<div class="nav__box">
 							<p class="nav__menu-title">Women</p>
 							<a class="nav__item" href="#">Dresse</a>
@@ -406,27 +413,27 @@
 			<nav class="crumbs__path">
 				<ul class="crumbs__list">
 					<li class="crumbs__item"><a href="index.html" class="crumbs__link">home</a></li>
-					<li class="crumbs__item"><a href="#" class="crumbs__link">men</a></li>
+					<li class="crumbs__item"><a href="product.html" class="crumbs__link">men</a></li>
 					<li class="crumbs__item crumbs__item-current">New Arrivals</li>
 				</ul>
 			</nav>
 		</div>
 	</div>
 
-	<section class="product">
+	<div class="product">
 		<div class="product__left">
 			<i class="fa fa-chevron-left" aria-hidden="true"></i>
 		</div>
 		<div class="product__right">
 			<i class="fa fa-chevron-right" aria-hidden="true"></i>
 		</div>
-		
+
 		<div class="container product__wrapper">
 			<div class="product__img">
 				<img src="img/product.jpg" alt="#">
 			</div>
 		</div>
-	</section>
+	</div>
 
 	<section class="description">
 		<div class="container description__wrapper">
@@ -455,17 +462,39 @@
 				<div class="description__box">
 					<div class="description__color">
 						CHOOSE COLOR <br>
-						<select name="color" size="1">
+						<div class="select">
+							<div class="select__header">
+								<div class="select__item-color" id="color"></div>
+								<span class="select__current">red</span>
+								<div class="select__icon"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+							</div>
+
+							<div class="select__body">
+								<div class="select__item">
+									<div class="select__item-red"></div>
+									<span>red</span>
+								</div>
+								<div class="select__item">
+									<div class="select__item-yellow"></div>
+									<span>yellow</span>
+								</div>
+								<div class="select__item">
+									<div class="select__item-blue"></div>
+									<span>blue</span>
+								</div>
+								<div class="select__item">
+									<div class="select__item-black"></div>
+									<span>black</span>
+								</div>
+							</div>
+						</div>
+						<!-- <select name="color" size="1">
 
 							<option value="red">red</option>
 							<option value="yellow">yellow</option>
 							<option value="blue">blue</option>
 							<option value="black">black</option>
-							<option style="background-color:#cccccc" value="cccccc">111</option>
-							<option style="background-color:#ffff00" value="ffff00">222</option>
-							<option style="background-color:#ff0000" value="ff0000">333</option>
-							<option style="background-color:#8099E8" value="8099E8">444</option>
-						</select>
+						</select> -->
 
 					</div>
 
@@ -483,19 +512,16 @@
 
 					<div class="description__quantity">
 						QUANTITY <br>
-						<input type="text">
+						<input type="number" min="0" max="999">
 					</div>
 				</div>
 				<div class="description__button">
-					<button type="submit" class="description__btn">Add to Cart</button>
+					<button type="submit" class="description__btn">
+						<i class="material-icons">
+							shopping_cart
+						</i>Add to Cart</button>
 				</div>
-
-
 			</form>
-
-
-
-
 		</div>
 	</section>
 
@@ -504,7 +530,7 @@
 			<h3 class="also__title">you may like also</h3>
 			<div class="items__wrapper">
 				<div class="items__card">
-					<a href="#" class="items__info-link" target="_blank">
+					<a href="single.html" class="items__info-link" target="_blank">
 						<img src="img/item9.jpg" alt="item1" class="items__img">
 						<span class="items__name">Mango People T-shirt</span><br>
 						<span class="items__price">$52.00</span>
@@ -515,7 +541,7 @@
 					</div>
 				</div>
 				<div class="items__card">
-					<a href="#" class="items__info-link" target="_blank">
+					<a href="single.html" class="items__info-link" target="_blank">
 						<img src="img/item10.jpg" alt="item2" class="items__img">
 						<span class="items__name">Mango People T-shirt</span><br>
 						<span class="items__price">$52.00</span>
@@ -526,7 +552,7 @@
 					</div>
 				</div>
 				<div class="items__card">
-					<a href="#" class="items__info-link" target="_blank">
+					<a href="single.html" class="items__info-link" target="_blank">
 						<img src="img/item11.jpg" alt="item3" class="items__img">
 						<span class="items__name">Mango People T-shirt</span><br>
 						<span class="items__price">$52.00</span>
@@ -537,7 +563,7 @@
 					</div>
 				</div>
 				<div class="items__card">
-					<a href="#" class="items__info-link" target="_blank">
+					<a href="single.html" class="items__info-link" target="_blank">
 						<img src="img/item12.jpg" alt="item4">
 						<span class="items__name">Mango People T-shirt</span><br>
 						<span class="items__price">$52.00</span>
@@ -662,6 +688,45 @@
 	</footer>
 
 	<script src="https://use.fontawesome.com/498429ed19.js"></script>
+
+	<script>
+		let select = function () {
+			let selectHeader = document.querySelectorAll('.select');
+			let selectItem = document.querySelectorAll('.select__item');
+			let selectItemColor = document.querySelectorAll('.select__item');
+
+			selectHeader.forEach(item => {
+				item.addEventListener('click', selectToggle)
+			});
+
+			selectItem.forEach(item => {
+				item.addEventListener('click', selectChoose)
+			});
+
+
+			function selectToggle() {
+				this.classList.toggle('active');
+			}
+
+			function selectChoose() {
+				let text = this.innerText,
+					color = this.firstElementChild.className,
+					select = this.closest('.select'),
+					currentText = select.querySelector('.select__current');
+				currentColor = document.querySelector('#color');
+				currentText.innerText = text;
+				currentColor.className = color;
+				selectHeader.classList.remove('active');
+
+			}
+
+
+		};
+
+
+		select();
+
+	</script>
 
 </body>
 
